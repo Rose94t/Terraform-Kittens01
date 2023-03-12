@@ -35,7 +35,7 @@ resource "aws_security_group" "sg" {
 resource "aws_instance" "kittens01" {
   ami           =  "ami-006dcf34c09e50022" 
   instance_type = "t2.micro"
-  key_name = "havva-key"
+  key_name = "----key"
   vpc_security_group_ids = [aws_security_group.sg.id]
   tags = {
     Name = "Kittens01"
